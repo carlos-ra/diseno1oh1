@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>Sidebar template</title>
+
+    <!-- using online links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- using local links -->
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar-themes.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+    <div class="tempButtons">
+        <a id="toggle-sidebar" class="btn btn-secondary rounded-0" href="#">
+            <span>Toggle Sidebar</span>
+        </a>
+        <a id="pin-sidebar" class="btn btn-outline-secondary rounded-0" href="#">
+            <span>Pin Sidebar</span>
+        </a>
+
+    </div>
+    <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <!-- sidebar-brand  -->
+                <div class="sidebar-item sidebar-brand">
+                    <a href="#"></a>
+                </div>
+                <!-- sidebar-header  -->
+                <div class="gridperfil celroja">
+                      <div class="celroja perfil"><img class="imgperfil" src="img/profilepic.jpg"></div>
+                      <di class="celroja name"><p class="txtname">Jimi Hendrix</p></di>
+                      <div class="celroja imgicon"><i class="material-icons icons">home</i></div>
+                      <div class="celroja"><p class="txtcolor">Profile</p></div>
+                      <div class="celroja imgicon"><i class="material-icons icons">forum</i></div>
+                      <div class="celroja"><p class="txtcolor">Messages</p></div>
+                      <div class="celroja imgicon"><i class="material-icons icons">insert_invitation</i></div>
+                      <div class="celroja"><p class="txtcolor">Calendar</p></div>
+                      <div class="celroja imgicon"><i class="material-icons icons">people</i></div>
+                      <div class="celroja"><p class="txtcolor">My Sessions</p></div>
+                      <div class="celroja imgicon"><i class="material-icons icons">email</i></div>
+                      <div class="celroja"><p class="txtcolor">Chest</p></div>
+                      <div class="celroja imgicon"><i class="material-icons icons">settings</i></div>
+                      <div class="celroja"><p class="txtcolor">Settings</p></div>
+
+                
+                </div>
+            </div>
+            <!-- sidebar-footer  -->
+            <div class="sidebar-footer">
+                <div class="dropdown">
+
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge badge-pill badge-warning notification">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
+                        <div class="notifications-header">
+                            <i class="fa fa-bell"></i>
+                            Notifications
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-check text-success border border-success"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. In totam explicabo</div>
+                                    <div class="notification-time">
+                                        6 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-exclamation text-info border border-info"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. In totam explicabo</div>
+                                    <div class="notification-time">
+                                        Today
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. In totam explicabo</div>
+                                    <div class="notification-time">
+                                        Yesterday
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-center" href="#">View all notifications</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-envelope"></i>
+                        <span class="badge badge-pill badge-success notification">7</span>
+                    </a>
+                    <div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
+                        <div class="messages-header">
+                            <i class="fa fa-envelope"></i>
+                            Messages
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong> Jhon doe</strong>
+                                    </div>
+                                    <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. In totam explicabo</div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong> Jhon doe</strong>
+                                    </div>
+                                    <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. In totam explicabo</div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong> Jhon doe</strong>
+                                    </div>
+                                    <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. In totam explicabo</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-center" href="#">View all messages</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog"></i>
+                        <span class="badge-sonar"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuMessage">
+                        <a class="dropdown-item" href="#">My profile</a>
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Setting</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="fa fa-power-off"></i>
+                    </a>
+                </div>
+                <div class="pinned-footer">
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- page-content  -->
+        <main class="page-content">
+            <div id="overlay" class="overlay"></div>
+            <div class="mainContent">
+                <div class="gridcontainer font">        
+                        <div class="contactList background">
+                            <div class="celroja">
+                                <div class="messagesTitle">Messages</div>
+                                <div class="celverde" id="forSearchInput">
+                                  <div>
+                                    <div class="form-group col-md-12">
+                                      
+                                    </div>                              
+                                  </div>
+                                  <div class="searchContainer"><img class="searchIcon" src="img/search.png"></div>
+                                  <div class="searchContainer"><input type="text" placeholder="Search" class="searchInput background"></div>              
+                                </div>
+                            </div>
+                            <div class="chats">
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="notification"><div class="redCircle">3</div></div>
+                                  </div>
+                                </div>                      
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="notification"><div class="redCircle">5</div></div>
+                                  </div>
+                                </div>                      
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="notification"><div class="redCircle">1</div></div>
+                                  </div>
+                                </div>                      
+                                <div class="contactCard">
+                                  <div class="celroja gridContact active">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div>                      
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div>                      
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div>                      
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div>                      
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div>                      
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div>                      
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div> 
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div> 
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div> 
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div> 
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div> 
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div> 
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div> 
+                                <div class="contactCard">
+                                  <div class="celroja gridContact">                
+                                    <div class="picture"><img src="img/profilepic.jpg" class="profilePic"></div>              
+                                    <div class="contactLabel"><div id="forName">Name</div></div>
+                                    <div class="contactLabel"><div id="forDate">02 Feb</div></div>                            
+                                    <div class="contactLabel"><div id="forHobby">Hobby</div></div>
+                                    <div class="celverde"></div>
+                                  </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="celdaroja chat background">
+                            <div class="chatHeader">
+                                <div id="forChatHeader">
+                                    <div class="chatTitle">Guitar</div>
+                                    <div class="chatSub">From: Hali</div>
+                                </div>                                
+                            </div>
+                            <div class="card-body msg_card_body">
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    Hi, how are you samim?
+                                    <span class="msg_time">8:40 AM, Today</span>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end mb-4">
+                                  <div class="msg_cotainer_send">
+                                    I love 1Oh1, I've learned so many things for free!
+                                    <span class="msg_time_send">8:55 AM, Today</span>
+                                  </div>
+                                  <div class="img_cont_msg">
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    I am good too, thank you for your time and knowledge!
+                                    <span class="msg_time">9:00 AM, Today</span>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end mb-4">
+                                  <div class="msg_cotainer_send">
+                                    You welcome Maryam
+                                    <span class="msg_time_send">9:05 AM, Today</span>
+                                  </div>
+                                  <div class="img_cont_msg">
+                                
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    I am looking forward for our next lesson
+                                    <span class="msg_time">9:07 AM, Today</span>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end mb-4">
+                                  <div class="msg_cotainer_send">
+                                    Ok, thank you have a good day
+                                    <span class="msg_time_send">9:10 AM, Today</span>
+                                  </div>
+                                  <div class="img_cont_msg">
+                              
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    Bye, see you
+                                    <span class="msg_time">9:12 AM, Today</span>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    Hi, how are you samim?
+                                    <span class="msg_time">8:40 AM, Today</span>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end mb-4">
+                                  <div class="msg_cotainer_send">
+                                    Hi Maryam i am good tnx how about you?
+                                    <span class="msg_time_send">8:55 AM, Today</span>
+                                  </div>
+                                  <div class="img_cont_msg">
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    I am good too, thank you for your time and knowledge!
+                                    <span class="msg_time">9:00 AM, Today</span>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end mb-4">
+                                  <div class="msg_cotainer_send">
+                                    You welcome Maryam
+                                    <span class="msg_time_send">9:05 AM, Today</span>
+                                  </div>
+                                  <div class="img_cont_msg">
+                                
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    I am looking forward for our next lesson
+                                    <span class="msg_time">9:07 AM, Today</span>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end mb-4">
+                                  <div class="msg_cotainer_send">
+                                    Ok, thank you have a good day
+                                    <span class="msg_time_send">9:10 AM, Today</span>
+                                  </div>
+                                  <div class="img_cont_msg">
+                              
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    Bye, see you
+                                    <span class="msg_time">9:12 AM, Today</span>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    Hi, how are you samim?
+                                    <span class="msg_time">8:40 AM, Today</span>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end mb-4">
+                                  <div class="msg_cotainer_send">
+                                    Hi Maryam i am good tnx how about you?
+                                    <span class="msg_time_send">8:55 AM, Today</span>
+                                  </div>
+                                  <div class="img_cont_msg">
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    I am good too, thank you for your time and knowledge!
+                                    <span class="msg_time">9:00 AM, Today</span>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end mb-4">
+                                  <div class="msg_cotainer_send">
+                                    You welcome Maryam
+                                    <span class="msg_time_send">9:05 AM, Today</span>
+                                  </div>
+                                  <div class="img_cont_msg">
+                                
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    I am looking forward for our next lesson
+                                    <span class="msg_time">9:07 AM, Today</span>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end mb-4">
+                                  <div class="msg_cotainer_send">
+                                    Ok, thank you have a good day
+                                    <span class="msg_time_send">9:10 AM, Today</span>
+                                  </div>
+                                  <div class="img_cont_msg">
+                              
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-start mb-4">
+                                  <div class="img_cont_msg">
+                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                  </div>
+                                  <div class="msg_cotainer">
+                                    Bye, see you
+                                    <span class="msg_time">9:12 AM, Today</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="inputChat">
+                                <input id="forInputChat" placeholder="Type a message..." type="text">
+                                <a class="attach" href="#">
+                                    <img class="attachIcon" src="img/attach.png">
+                                </a>
+                                <a class="send" href="#">
+                                    <img class="sendIcon" src="img/send.png">
+                                </a>
+                              </div>                              
+                        </div>
+                </div>   
+            </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+
+    <!-- using online scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>    
+
+    <!-- using local scripts -->
+    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
