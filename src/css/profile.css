@@ -1,0 +1,105 @@
+.celprofile {
+    border: solid #eb2e2e;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#description {
+    display: grid;
+    grid-template-columns: 20fr 1fr;
+}
+#grid-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#score {
+    display: grid;
+    grid-template-columns: 15fr 25fr 60fr;
+}
+#subgridscore {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px;
+}
+.create {
+    color: #838383;
+}
+.imgfondo {
+    width:-webkit-fill-available;
+}
+.fondo {
+    height: 100%;
+}
+.start {
+    color: #fde721;
+    font-size: 35px;
+}
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.city {
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+.description {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+}
+.languages {
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+.explore {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.guide {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 16PX;
+}
+.projects {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size:16px;
+}
+.explore:hover{
+    color: #1cc02a;
+}
+.guide:hover {
+    color: #1cc02a;
+}
+.projects:hover {
+    color: #1cc02a;
+}
+.celexplore {
+    text-align: center;
+}
+.celguide {
+    text-align: center;
+}
+.celprojects {
+    text-align: center;
+}
+.txtrating {
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+.celrating {
+    justify-self: center;
+    align-self: center;
+    padding-top: 5px;
+}
+.cel {
+    border: solid #1cc02a;
+}
