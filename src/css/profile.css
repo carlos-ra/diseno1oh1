@@ -1,19 +1,29 @@
 .celprofile {
-    border: solid #eb2e2e;
+    /*border: solid #eb2e2e;*/
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 #description {
     display: grid;
     grid-template-columns: 20fr 1fr;
+    margin-left: 15px;
+    padding-left: 15px;
+    margin-right: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d1d4e1;
 }
 #grid-menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
 }
 #score {
     display: grid;
     grid-template-columns: 15fr 25fr 60fr;
+    margin-top: 8px;
 }
 #subgridscore {
     display: grid;
@@ -36,22 +46,27 @@
     font-weight: bold;
     font-size: 18px;
     font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
 }
 .city {
     color: #000000;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     font-size: 17px;
+    margin-bottom: 0px;
 }
 .description {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: italic;
+    margin-bottom: 25px;
+    margin-top: 5px;    
 }
 .languages {
     color: #000000;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     font-size: 17px;
+    margin-bottom: 5px;
 }
 .explore {
     color: #000000;
@@ -101,5 +116,47 @@
     padding-top: 5px;
 }
 .cel {
-    border: solid #1cc02a;
+    /*border: solid #1cc02a;*/
+}
+.tab{
+    display: none
+}
+.selected{
+    display: block;
+}
+.exploreSection{
+    display: grid;
+    grid-template-rows: 4fr 2fr 6fr 6fr 6fr 1fr;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 20px;   
+}
+.interests{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.interestsTitle{
+    grid-column: 1/2;
+    grid-row: 1/2;    
+}
+.interestsIcon{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.interestsImage{
+    grid-row: 2/3;    
+}
+.reviews{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-right: 45%;
+}
+.reviewImage{
+    grid-row: 1/4;
+    grid-column: 1/2;    
+}
+.review{    
+    grid-column: 2/3;
 }
