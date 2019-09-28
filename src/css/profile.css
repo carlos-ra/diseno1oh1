@@ -33,7 +33,8 @@
     color: #838383;
 }
 .imgfondo {
-    width:-webkit-fill-available;
+    width:100%;
+    height: 350px;
 }
 .fondo {
     height: 100%;
@@ -126,37 +127,63 @@
 }
 .exploreSection{
     display: grid;
-    grid-template-rows: 4fr 2fr 6fr 6fr 6fr 1fr;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 20px;   
+    grid-template-rows: 30px 135px 35px 12fr 1fr;
+    margin-right: ;
+    margin-left: ;
+    margin-top: ;   
 }
-.interests{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+.interestsHeader{
+    display: grid;    
+    grid-template-columns: 35px 85px 45px auto;
 }
 .interestsTitle{
-    grid-column: 1/2;
-    grid-row: 1/2;    
+    grid-column: 2/3;    
 }
 .interestsIcon{
+    grid-column: 3/4;
+}
+.interestsContent{
+    grid-row: ;
+    display: grid;
+    grid-template-rows: 100px 35px;
+    grid-template-columns: 35px 80% auto;
+}
+.interestsImages{
     grid-column: 2/3;
-    grid-row: 1/2;
+    display: grid;    
+    grid-template-columns: repeat(auto-fit,minmax(70px,1fr));
+    grid-gap: 10px;
+}
+.interestsMoreLink{
+    grid-row: 2/3;
+    grid-column: 2/3; 
+    justify-self: end;
 }
 .interestsImage{
-    grid-row: 2/3;    
+    grid-row: ;
+}
+.reviewsTitle{
+    display: grid;
+    grid-template-columns: 35px 85px auto;    
+}
+#forReviewsTitle{
+    grid-column: 2/3;
+}
+.reviewsContent{
+    display: grid;
+    grid-auto-rows: 140px;    
+    grid-template-columns: 35px 50% auto;
 }
 .reviews{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 2fr 1fr;
-    margin-right: 45%;
+    grid-column: 2/3;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 4fr; 
 }
 .reviewImage{
-    grid-row: 1/4;
-    grid-column: 1/2;    
+    grid-row: ;
+    grid-column: ;
 }
-.review{    
-    grid-column: 2/3;
+.comment{    
+    grid-column: ;
 }
