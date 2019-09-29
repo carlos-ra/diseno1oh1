@@ -212,6 +212,14 @@
             <div id="overlay" class="overlay"></div>
             <div class="mainContent">
                 <div class="celprofile">
+                    <div class="memberView">
+                        <div class="profileView">
+                            Profile
+                        </div>
+                        <div class="viewAsMember">
+                            View as member
+                        </div>
+                    </div>
                     <div class="fondo"><img class="imgfondo" src="img/img-profile/profileBG.jpg"></div>
                 <div class="celprofile" id="description">
                   <div class="cel"><p class="name">Jimi Hendrix</p></div>
@@ -238,31 +246,56 @@
                     <div class="cel"><i class="material-icons icons start"> start</i></div>
                     <div class="cel"><i class="material-icons icons start"> start</i></div>
                     <div class="cel"><i class="material-icons icons start"> start</i></div>
+                    <div class="rateNumber">68</div>
                   </div>
                   <div class="cel"></div>                 
                 </div>
                 <div class="profileSection">
-                    <div class="tab selected">
+                    <div class="tab">
                         <div class="exploreSection">
                             <div class="interestsHeader">
                                 <div class="interestsTitle">Interests</div>
-                                <div class="interestsIcon">icon</div>
+                                <div class="interestsIcon">
+                                    <a href="#">
+                                        <img class="editIcon" src="img/edit.png">
+                                    </a>
+                                </div>
                             </div>
                             <div class="interestsContent">
                                 <div class="interestsImages">
-                                    <div class="interestsImage">img1</div>
-                                    <div class="interestsImage">img</div>
-                                    <div class="interestsImage">img</div>
-                                    <div class="interestsImage">img</div>
-                                    <div class="interestsImage">img2</div>
-                                    <div class="interestsImage">img</div>
-                                    <div class="interestsImage">img</div>
-                                    <div class="interestsImage">img</div>
-                                    <div class="interestsImage">img3</div>
-                                    <div class="interestsImage">img</div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
                                 </div> 
                                 <div class="interestsMoreLink">
-                                    More
+                                    <a id="interestsMoreLink" href="#">More</a>
                                 </div>
                             </div>
                             <div class="reviewsTitle">
@@ -270,24 +303,281 @@
                             </div>
                             <div class="reviewsContent">
                                 <div class="reviews">
-                                    <div class="reviewImage">Img</div>
+                                    <div class="reviewImage">
+                                        <div class="reviewImageGrid"><img class="imageReview" src="img/skills/imageReview.jpg"></div>
+                                        <div class="reviewLabel">Project Name</div>
+                                    </div>
                                     <div class="reviewInfo">
-                                        <div class="reviewRate">rate</div>
-                                        <div class="reviewViewAllReviews">viewAllReviews</div>
-                                        <div class="comment">review</div>
-                                        <div class="comment">review</div>
-                                        <div class="comment">review</div>
+                                        <div class="reviewRate">
+                                            <div class="celXs" id="subgridscoreXs">
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="rateNumber">5</div>
+                                              </div>
+                                        </div>
+                                        <div class="reviewViewAllReviews">
+                                            <a id="reviewViewAllReviews" href="#">viewAllReviews</a>
+                                        </div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet consectetur adipiscing elit"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Nunc convallis nascetur duis"</div>
                                     </div>
                                 </div>
-                                
+                                <div class="reviews">
+                                    <div class="reviewImage">
+                                        <div class="reviewImageGrid"><img class="imageReview" src="img/skills/imageReview.jpg"></div>
+                                        <div class="reviewLabel">Project Name</div>
+                                    </div>
+                                    <div class="reviewInfo">
+                                        <div class="reviewRate">
+                                            <div class="celXs" id="subgridscoreXs">
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="rateNumber">4</div>
+                                              </div>
+                                        </div>
+                                        <div class="reviewViewAllReviews">
+                                            <a id="reviewViewAllReviews" href="#">viewAllReviews</a>
+                                        </div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet consectetur adipiscing elit"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Nunc convallis nascetur duis"</div>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="reviewImage">
+                                        <div class="reviewImageGrid"><img class="imageReview" src="img/skills/imageReview.jpg"></div>
+                                        <div class="reviewLabel">Project Name</div>
+                                    </div>
+                                    <div class="reviewInfo">
+                                        <div class="reviewRate">
+                                            <div class="celXs" id="subgridscoreXs">
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="rateNumber">4</div>
+                                              </div>
+                                        </div>
+                                        <div class="reviewViewAllReviews">
+                                            <a id="reviewViewAllReviews" href="#">viewAllReviews</a>
+                                        </div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet consectetur adipiscing elit"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Nunc convallis nascetur duis"</div>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="reviewImage">
+                                        <div class="reviewImageGrid"><img class="imageReview" src="img/skills/imageReview.jpg"></div>
+                                        <div class="reviewLabel">Project Name</div>
+                                    </div>
+                                    <div class="reviewInfo">
+                                        <div class="reviewRate">
+                                            <div class="celXs" id="subgridscoreXs">
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="rateNumber">4</div>
+                                              </div>
+                                        </div>
+                                        <div class="reviewViewAllReviews">
+                                            <a id="reviewViewAllReviews" href="#">viewAllReviews</a>
+                                        </div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet consectetur adipiscing elit"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Nunc convallis nascetur duis"</div>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="reviewImage">
+                                        <div class="reviewImageGrid"><img class="imageReview" src="img/skills/imageReview.jpg"></div>
+                                        <div class="reviewLabel">Project Name</div>
+                                    </div>
+                                    <div class="reviewInfo">
+                                        <div class="reviewRate">
+                                            <div class="celXs" id="subgridscoreXs">
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="rateNumber">6</div>
+                                              </div>
+                                        </div>
+                                        <div class="reviewViewAllReviews">
+                                            <a id="reviewViewAllReviews" href="#">viewAllReviews</a>
+                                        </div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet consectetur adipiscing elit"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Nunc convallis nascetur duis"</div>
+                                    </div>
+                                </div>
                             </div>                            
                             <div class="moreLink">
-                                <div id="forMoreLink">More</div>
+                                <div id="forMoreLink">
+                                    <a id="moreLink" href="#">More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab">
-                        <div class="guideSection"></div>
+                    <div class="tab selected">
+                        <div class="guideSection">
+                            <div class="interestsHeader">
+                                <div class="interestsTitle">Subjects</div>
+                                <div class="interestsIcon">
+                                    <a href="#">
+                                        <img class="editIcon" src="img/edit.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="interestsContent">
+                                <div class="interestsImages">
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>
+                                    <div class="interestsImage">
+                                        <img class="imagesInterests" src="img/skills/testimginterests.jpg">
+                                    </div>      
+                                </div> 
+                                <div class="interestsMoreLink">
+                                    <a id="interestsMoreLink" href="#">More</a>
+                                </div>
+                            </div>
+                            <div class="reviewsTitle">
+                                <div id="forReviewsTitle">Reviews</div>
+                            </div>
+                            <div class="reviewsContent">
+                                <div class="reviews">
+                                    <div class="reviewImage">
+                                        <div class="reviewImageGrid"><img class="imageReview" src="img/skills/imageReview.jpg"></div>
+                                        <div class="reviewLabel">Project Name</div>
+                                    </div>
+                                    <div class="reviewInfo">
+                                        <div class="reviewRate">
+                                            <div class="celXs" id="subgridscoreXs">
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="rateNumber">5</div>
+                                              </div>
+                                        </div>
+                                        <div class="reviewViewAllReviews">
+                                            <a id="reviewViewAllReviews" href="#">viewAllReviews</a>
+                                        </div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet consectetur adipiscing elit"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Nunc convallis nascetur duis"</div>
+                                    </div>
+                                </div>
+                                <div class="reviews">
+                                    <div class="reviewImage">
+                                        <div class="reviewImageGrid"><img class="imageReview" src="img/skills/imageReview.jpg"></div>
+                                        <div class="reviewLabel">Project Name</div>
+                                    </div>
+                                    <div class="reviewInfo">
+                                        <div class="reviewRate">
+                                            <div class="celXs" id="subgridscoreXs">
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="cel"><i class="material-icons icons startXs"> start</i></div>
+                                                <div class="rateNumber">4</div>
+                                              </div>
+                                        </div>
+                                        <div class="reviewViewAllReviews">
+                                            <a id="reviewViewAllReviews" href="#">viewAllReviews</a>
+                                        </div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Lorem ipsum dolor sit amet consectetur adipiscing elit"</div>
+                                        <div class="commentImage">
+                                            <img class="commentProfileImage" src="img/skills/profilePic.jpg">
+                                        </div>
+                                        <div class="comment">"Nunc convallis nascetur duis"</div>
+                                    </div>
+                                </div>                                
+                            </div>                            
+                            <div class="moreLink">
+                                <div id="forMoreLink">
+                                    <a id="moreLink" href="#">More</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab">
                         <div class="projectsSection"></div>
