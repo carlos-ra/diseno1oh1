@@ -1,0 +1,130 @@
+.container {
+    display: grid;
+    grid-template-columns: 50fr;
+    border: solid #e03d3d;
+}
+#gridBackground {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#gridForm {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#gridLabels {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
+#gridPersonal {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#gridSelect {
+    display: grid;
+    grid-template-columns: 20fr 70fr;
+}
+#gridOption {
+    display: grid;
+    grid-template-columns: 5fr 5fr 90fr;
+}
+#gridProfile {
+    display: grid;
+    grid-template-columns: 20fr 40fr 40fr;
+}
+#gridLocations {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#gridAdd {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#griCreator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#gridText {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+#gridCheck {
+    display: grid;
+    grid-template-columns: 10fr 10fr 80fr;
+}
+#gridIcons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#gridCategories {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.pStatus {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+p {
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+.txtL {
+    font-size: 15px;
+}
+.inputFname {
+    width:98%;
+    height: 25px;
+}
+.inputLname {
+    width: 95%;
+    height: 25px;
+}
+.inputP {
+    width:-webkit-fill-available;
+    height: 20px;
+}
+
+.select {
+    width:-webkit-fill-available;
+    height: 25px;
+}
+.btn {
+    border-radius: 5px;
+}
+.btnSave {
+    padding-left: 90%;
+}
+.buttonSave{
+    background: #78eb0d;
+    color: #ffffff;
+    width: 70%;
+    padding: 7px;
+}
+.inputTitle {
+    width: 100%;
+    height: 20px; 
+}
+.input {
+    padding-left: 15px;
+    padding-right: 18px;
+}
+.inputDescription{
+    width: 100%;
+    height: 50px;
+}
+.iptC {
+    padding-right: 10px;
+
+}
+.inputC {
+    width:-webkit-fill-available;
+}
+.celr {
+    border: solid #e92424;
+}
+.cel {
+    border: solid #78eb0d;
+}
