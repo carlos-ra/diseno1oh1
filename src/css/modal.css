@@ -6,11 +6,14 @@
 #gridBackground {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 35vh;
+    background-image: url(../img/img-profile/profileBG.jpg)
 }
 
 #gridForm {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 55px;
 }
 #gridLabels {
     display: grid;
@@ -55,7 +58,7 @@
 }
 #gridCheck {
     display: grid;
-    grid-template-columns: 10fr 10fr 80fr;
+    grid-template-columns: 5fr 5fr 90fr;
     margin-top: 5px;
 }
 #gridIcons{
@@ -269,4 +272,12 @@ input[type=checkbox i] {
     -moz-appearance: none;
     appearance: none;
     border-radius: 5px;
+}
+.imgBackgraound {
+    position: fixed;
+    margin-top: 11%;
+    margin-left: 30px;
+}
+.labelYes {
+    padding-left: 28px
 }
