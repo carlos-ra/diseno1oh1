@@ -1,0 +1,43 @@
+.redcel{
+	border: 1px solid red;
+}
+
+.gridSimulation{
+	display: grid;
+	grid-template-columns: 30% 45% 25%; 	
+}
+
+.modalNewCategory{
+	display: grid;
+    grid-template-columns: 1fr;
+	padding-top: 200px;
+	padding-left:25px; 
+	padding-right: 25px;
+}
+
+.categoryName{
+	display: grid;
+	grid-template-columns: 25% 75%; 
+}
+
+.categoryDescription{
+	display: grid; 
+	grid-template-columns: 35% 65%; 
+}
+
+.gridActions{
+	display: grid; 
+	grid-template-columns: 60% 15% 25%;
+}
+
+.reminder{
+	padding:5px 18px;  
+}
+
+.boldText{
+	font-weight: bold;
+}
+
+.greyText{
+	color:grey;
+}
