@@ -1,0 +1,51 @@
+.grid {
+    border:solid red;
+}
+
+.cell {
+    border:solid green;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.description {
+}
+
+.rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.searchHelp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.help {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
