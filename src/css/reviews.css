@@ -1,16 +1,23 @@
 .grid {
-    border:solid red;
+    /*border:solid red;*/
 }
 
 .cell {
-    border:solid green;
+    /*border:solid green;*/
 }
 
 .profile {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+    grid-template-columns: 250px 1fr;
+    margin-bottom: 20px;
 
+}
+.background{
+    height: 300px;
+    background-image: url("../img/baking.jpg");
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+}
 .data {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,6 +30,9 @@
 .rating {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 2px solid #d1d4e1;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
 }
 
 .searchHelp {
@@ -32,12 +42,14 @@
 
 .search {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 60vw;
 }
 
 .help {
     display: grid;
     grid-template-columns: 1fr;
+    width: 30vw;
 }
 
 .reviews {
@@ -61,15 +73,23 @@
 
 .score {
     display: grid;
-    grid-template-columns: 40px 40px 40px 40px 40px 14px;
+    grid-template-columns: repeat(5,30px) 14px;
     color: #fde721;
     font-size: 35px;
-    margin-left: 30px;
+    justify-content: center;
+    align-items: start;
 }
-
+.ratingName{
+    display: grid;
+    align-items: end;
+}
+.ratingText{
+    display: grid;
+    align-items: center;
+}
 .rating {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 20px 1fr 1fr 1fr 20px;
     text-align: center;
 }
 
@@ -81,12 +101,9 @@
 
 .subtitles {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 30px;
+    grid-template-columns: 20px 1fr 1fr 1fr 20px;
+    margin-top: 50px;
     padding-bottom: 25px;
-    border-bottom: 2px solid #d1d4e1;
-    margin-right: 35px;
-    margin-left: 15px;
     text-align: center;
 
 }
@@ -106,12 +123,8 @@
     height: 30px;
     width: 100%;
     border: none; 
-    outline: none;  
-}
-
-.search{   
-    grid-column-start: 1;
-    grid-column-end: 3;
+    outline: none;
+    margin-left: 35px;  
 }
 
 .icon{   
@@ -119,12 +132,25 @@
     grid-row-end: 3;
     justify-self: center;
 }
-
-.imgperfil {
-    width: 50%;
+.imageProfile{
+    position: relative;
+    bottom: -250px;
+    margin-left: 30px;
+}
+.imgProfile {
+    position: relative;    
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    bottom: 0;
+    border: 5px solid #ffffff;    
+}
+.imgperfil{
+    position: relative;    
     height: 110px;
     width: 110px;
     border-radius: 50%;
+    bottom: 0;
 }
 
 :root {
@@ -132,12 +158,77 @@
 }
 
 .button{
-    background-color: #1cc02a;
+    background-color: #8cc63f;
     text-align: center;
     color: white;
     font-weight: bold;
-    border:solid green;
-    border-radius: 20%;
-    width: 90%;
-    margin-left: 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;    
+}
+.topicTitle{
+    display: grid;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    height: 65px;    
+}
+.withContainer{
+    display: grid;
+    grid-template-columns: 35px auto;
+    height: 25px;
+}
+.headerText{
+    display: grid;
+    font-size: 14px;
+    align-items: end;
+}
+.autor{
+    display: grid;
+    font-size: 20px;
+    align-items: end;
+    font-weight: 700;
+}
+.projectsNumber{
+    font-size: 30px;
+    font-weight: 700;
+    color: #babbbd;
+}
+.helpText{
+    font-size: 14px;
+    font-weight: 700;
+    height: 28px;
+}
+.searchContainer{
+    padding-bottom: 45px;
+    border-bottom: 2px solid #d1d4e1; 
+    margin-bottom: 80px;
+}
+.tag{
+    display: grid;
+    height: 25px;
+    width: 100px;
+    background-color: #d7d7d7;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.sortByText{
+    display: grid;
+    align-items: center;
+    font-size: 14px;
+}
+.sortBy{
+    display: grid;
+    grid-template-columns: 60px auto;
+}
+.searchIcon{
+    position: absolute;
+}
+.searchCont{
+    width: 350px;
+    border-bottom: 2px solid #d1d4e1; 
+    margin-bottom: 20px;
 }
