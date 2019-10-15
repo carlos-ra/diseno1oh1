@@ -1,19 +1,28 @@
 .grid {
-    /*border:solid red;*/
+    border:solid red;
 }
 
 .cell {
-    /*border:solid green;*/
+    border:solid green;
 }
+
 
 .profile {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 10vw 1fr;
     margin-bottom: 20px;
-
+    margin-left: 11vw;
 }
+
+.profile2 {
+    display: grid;
+    grid-template-columns: 10vw 1fr;
+    margin-bottom: 20px;
+    margin-left: 4vw;
+}
+
 .background{
-    height: 300px;
+    height: 360px;
     background-image: url("../img/baking.jpg");
     background-size: 100% 100%;
     margin-bottom: 20px;
@@ -24,7 +33,8 @@
 }
 
 .description {
-    margin-left: 50px;
+    margin-left: 6vw;
+    padding-top: 15px;
 }
 
 .rating {
@@ -37,29 +47,31 @@
 
 .searchHelp {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40vw 40vw;
+    margin-left: 6vw;
 }
 
 .search {
     display: grid;
     grid-template-columns: 1fr;
-    width: 60vw;
+    padding-top: 20px;
 }
 
 .help {
     display: grid;
     grid-template-columns: 1fr;
-    width: 30vw;
+    margin-left: 14vw;
+    width: 32vw;
 }
 
 .reviews {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 90vw;
 }
 
 .review {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% auto;
 }
 
 .imgfondo {
@@ -71,21 +83,35 @@
     height: 100%;
 }
 
-.score {
+.score1 {
     display: grid;
-    grid-template-columns: repeat(5,30px) 14px;
+    grid-template-columns: repeat(5,40px) 30px;
     color: #fde721;
     font-size: 35px;
     justify-content: center;
     align-items: start;
 }
+
+.score2 {
+    display: grid;
+    grid-template-columns: repeat(5,40px) 30px;
+    color: #fde721;
+    font-size: 35px;
+    align-items: start;
+    padding-left: 2vw;
+}
+
 .ratingName{
     display: grid;
     align-items: end;
+    padding-left: 2vw;
+    font-size: 25px;
 }
 .ratingText{
     display: grid;
     align-items: center;
+    font-size: 25px; 
+    padding-top: 25px;
 }
 .rating {
     display: grid;
@@ -94,29 +120,29 @@
 }
 
 .rateNumber{
-    font-size: 11px;    
-    align-self: end;
+    font-size: 15px;    
+    align-self: center;
     color: #9f9ea1;
 }
 
 .subtitles {
     display: grid;
     grid-template-columns: 20px 1fr 1fr 1fr 20px;
-    margin-top: 50px;
-    padding-bottom: 25px;
+    margin-top: 75px;
+    padding-bottom: 30px;
     text-align: center;
 
 }
 
 .subtitle:hover{
     color: #1cc02a;
+    text-decoration: underline;
 }
 
 .subtitle {
     color: #000000;
-    text-decoration: underline;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 35px;
 }
 
 .searchInput{   
@@ -124,7 +150,8 @@
     width: 100%;
     border: none; 
     outline: none;
-    margin-left: 35px;  
+    margin-left: 4vw;  
+    font-size: 18px;
 }
 
 .icon{   
@@ -135,20 +162,20 @@
 .imageProfile{
     position: relative;
     bottom: -250px;
-    margin-left: 30px;
+    margin-left: 5vw;
 }
 .imgProfile {
     position: relative;    
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    bottom: 0;
-    border: 5px solid #ffffff;    
+    height: 200px;
+    width: 200px;
+    border-radius: 70%;
+    bottom: -58px;
+    border: 8px solid #ffffff;    
 }
 .imgperfil{
     position: relative;    
-    height: 110px;
-    width: 110px;
+    height: 120px;
+    width: 120px;
     border-radius: 50%;
     bottom: 0;
 }
@@ -161,35 +188,42 @@
     background-color: #8cc63f;
     text-align: center;
     color: white;
+    font-size: 20px;
     font-weight: bold;
     border: 2px solid #000000;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 100%;
-    height: 40px;    
+    height: 55px;    
 }
 .topicTitle{
     display: grid;
     align-items: center;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 35px;
+    font-size: 4vw;
     font-weight: 700;
-    height: 65px;    
+    height: 65px;   
+    padding-left: 3vw; 
+    padding-top: 20px; 
 }
 .withContainer{
     display: grid;
     grid-template-columns: 35px auto;
     height: 25px;
+    padding-left: 3vw; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
 }
 .headerText{
     display: grid;
-    font-size: 14px;
+    font-size: 2vw;
     align-items: end;
 }
 .autor{
     display: grid;
-    font-size: 20px;
+    font-size: 2.5vw;
     align-items: end;
     font-weight: 700;
+    padding-left: 2vw; 
 }
 .projectsNumber{
     font-size: 30px;
@@ -197,9 +231,11 @@
     color: #babbbd;
 }
 .helpText{
-    font-size: 14px;
+    font-size: 22px;
     font-weight: 700;
     height: 28px;
+    padding-bottom: 5px;
+    padding-top: 25px;
 }
 .searchContainer{
     padding-bottom: 45px;
@@ -208,21 +244,22 @@
 }
 .tag{
     display: grid;
-    height: 25px;
-    width: 100px;
+    height: 30px;
+    width: 150px;
     background-color: #d7d7d7;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-size: 23px;
 }
 .sortByText{
     display: grid;
     align-items: center;
-    font-size: 14px;
+    font-size: 20px;
 }
 .sortBy{
     display: grid;
-    grid-template-columns: 60px auto;
+    grid-template-columns: 7vw auto;
 }
 .searchIcon{
     position: absolute;
@@ -232,3 +269,5 @@
     border-bottom: 2px solid #d1d4e1; 
     margin-bottom: 20px;
 }
+/* Rules for sizing the icon. */
+.material-icons.md-36 { font-size: 36px; }
